@@ -18,7 +18,8 @@ I will analyze the similarity/variation of the composition of the associated lar
 I already have these data and am now in the process of preparing them for use. Others in my lab have used these techniques on similar data sets in the past, and I will use the analyses and visualizations for a poster presentation for SICB and for my committee meeting at the end of this quarter, so I am facing strong incentives in addition to the class assignment to complete these analyses and data visualizations.
 
 The End.
-PERMANOVA). 
-I already have these data and am now in the process of preparing them for use. Others in my lab have used these techniques on similar data sets in the past, and I will use the analyses and visualizations for a poster presentation for SICB and for my committee meeting at the end of this quarter, so I am facing strong incentives in addition to the class assignment to complete these analyses and data visualizations. 
+
+Everything after this is a weird bug (repeating text that does not show up in my text editor for this file) and please ignore:
+hniques on similar data sets in the past, and I will use the analyses and visualizations for a poster presentation for SICB and for my committee meeting at the end of this quarter, so I am facing strong incentives in addition to the class assignment to complete these analyses and data visualizations. 
 I propose to study ontogenetic changes in *Pisaster ochraceus* larval microbiomes. Characterizing the microbiome of early life-stage *P. ochraceus* will allow me to conduct future experiments using transcriptomics to examine what genes involved in maintaining host health are expressed under the varying conditions, and how potential shifts in microbiome and host genetics under toxin exposure may contribute to marine disea
 
