@@ -18,7 +18,11 @@ They match!
 
 ##Summarize an Anotation File
 
-###File Integrity on gzipped gtf annotation using a checksum 
+###File Integrity on gzipped gtf annotation using a checksum
+Ran checksum prior to unzipping 
+dmel-all-r6.36.gtf.gz: OK
+They match! 
+*See file_integrity2.sh for script under Scripts directory in homework3 branch 
 
 ###Compile a Report Summarizing the Annotation  
 
