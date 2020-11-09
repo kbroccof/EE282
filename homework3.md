@@ -3,6 +3,10 @@
 ##Summarize Genome Assembly 
 
 ###File Integrity on gzipped fasta file using a checksum 
+My checksum: fbd2855a20c3610050ff2496dd975821  dmel-all-chromosome-r6.36.fasta.gz 
+Online checksum for same file: fbd2855a20c3610050ff2496dd975821  dmel-all-chromosome-r6.36.fasta.gz 
+They match! 
+*See file_integrity.sh for script 
 
 ###Calculate Summaries of the Genome 
 
