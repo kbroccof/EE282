@@ -28,7 +28,22 @@ They match!
 *See Annotation_summaries.sh for script under Scripts directory in homework3 branch 
 
 ####A) Total number of features of each type, sorted from the most common to the least common:
-
+189268 exon
+ 162578 CDS
+  46664 5UTR
+  33629 3UTR
+  30812 start_codon
+  30754 stop_codon
+  30728 mRNA
+  17875 gene
+   3047 ncRNA
+    485 miRNA
+    366 pseudogene
+    312 tRNA
+    300 snoRNA
+    262 pre_miRNA
+    115 rRNA
+     32 snRNA
 
 ####B) Total number of genes per chromosome arm (X, Y, 2L, 2R, 3L, 3R, 4)
    3516 2L
@@ -37,4 +52,4 @@ They match!
    4225 3R
     114 4
    2691 X
-    113 Y(X, Y, 2L, 2R, 3L, 3R, 4)
+    113 Y
