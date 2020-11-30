@@ -6,10 +6,41 @@ bioawk -c fastx \
 
 ##dmelr6.lte.fa: 
 ###1. Sequence length distribution using a histogram with a log scale (shows the full range of lengths).
- 
+bioawk -c fastx \
+  ' { print length($seq) "\t" } ' \ 
+  dmelr6.lte.fa \
+| head
+
+#### output: 
+19956	
+44411	
+13157	
+76224	
+11983	
+87365	
+36913	
+22604	
+23238	
+86267
 
 
-###2. Sequence GC% distribution using a histogram. 
+###2. Sequence GC% distribution using a histogram.
+bioawk -c fastx \
+  ' { print gc($seq) } ' \ 
+  dmelr6.lte.fa \
+| head 
+
+####output:
+0.316797
+0.225147
+0.38717
+0.37584
+0.609614
+0.423236
+0.611573
+0.397408
+0.52965
+0.345138
 
 
 ###3. Cumulative sequence size (same as sequence length) sorted from largest to smallest sequences (use plotcdf utility which does the cumulative distribution).
@@ -44,11 +75,33 @@ display dmelr6.lte.lengc.png
 ##dmelr6.gt.fa: 
 ###1. Sequence length distribution using a histogram with a log scale (shows the full range of lengths).
 bioawk -c fastx \
- ' { CODE } ' \  
- dmelr6.gt.fa 
+  ' { print length($seq) "\t" } ' \ 
+  dmelr6.gt.fa \
+| head
 
+####output:
+23513712	
+25286936	
+28110227	
+32079331	
+1348131	
+23542271	
+3667352
+ 
+###2. Sequence GC% distribution using a histogram.
+bioawk -c fastx \
+  ' { print gc($seq) } ' \ 
+  dmelr6.gt.fa \
+| head
 
-###2. Sequence GC% distribution using a histogram. 
+####output:
+0.417816
+0.425983
+0.414447
+0.425558
+0.348053
+0.423434
+0.36656 
 
 
 ###3. Cumulative sequence size sorted from largest to smallest sequences (use plotcdf utility).
