@@ -52,3 +52,27 @@ bioawk -c fastx \
 
 
 ###3. Cumulative sequence size sorted from largest to smallest sequences (use plotcdf utility).
+bioawk -c fastx \
+  ' { print length($seq) "\t" gc($seq) } ' \ 
+  dmelr6.gt.fa \
+| sort -k1,1rn \ 
+| head
+
+####output:
+32079331	0.425558
+28110227	0.414447
+25286936	0.425983
+23542271	0.423434
+23513712	0.417816
+3667352	0.36656
+1348131	0.348053
+
+bioawk -c fastx \
+  ' { print length($seq) "\t" gc($seq) } ' \ 
+  dmelr6.gt.fa \
+| sort -k1,1rn \
+> dmelr6.gt.lengc.txt 
+
+plotCDF <(cut -f 1 dmelr6.gt.lengc.txt) dmelr6.gt.lengc.png \
+display dmelr6.gt.lengc.png
+
