@@ -35,9 +35,10 @@ bioawk -c fastx \
   ' { print length($seq) "\t" gc($seq) } ' \ 
   dmelr6.lte.fa \
 | sort -k1,1rn \
-> dmelr6.lte.lengc.txt
+> dmelr6.lte.lengc.txt 
 
-
+plotCDF <(cut -f 1 dmelr6.lte.lengc.txt) dmelr6.lte.lengc.png \
+display dmelr6.lte.lengc.png
 
 
 ##dmelr6.gt.fa: 
