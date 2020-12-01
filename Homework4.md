@@ -32,6 +32,8 @@ They match!
 #### ≤ 100kb
 1.	Sequence length distribution. Use a histogram! A log scale will be helpful to show the full range of lengths.
 
+LTELength_Hist.png
+
 2.	 Sequence GC% distribution. Use a histogram!
 
 3.	Cumulative sequence size sorted from largest to smallest sequences. Don't forget about the plotCDF utility we used in class.
@@ -48,6 +50,7 @@ dmelr6.lte.lengc.png
 dmelr6.gt.lengc.png
 
 *See `Plots.sh` for script under ScriptsHW4 directory in homework4 branch*
+
 ## Genome Assembly 
 
 ### File Integrity  file using a checksum 
