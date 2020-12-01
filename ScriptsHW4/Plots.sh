@@ -173,6 +173,17 @@ bioawk -c fastx \
 > dmelr6.gt.gc.hist.csv
 
 #### Histogram in R:
+> setwd("~/Documents/UCI/Bioinformatics_Fall2020")
+> gtGC <- read.csv(file = 'dmelr6-gt-gc-hist.csv')
+> head(gtGC)
+        GC
+1 0.417816
+2 0.425983
+3 0.414447
+4 0.425558
+5 0.348053
+6 0.423434
+> hist(gtGC$GC)
 
 
 ###3. Cumulative sequence size sorted from largest to smallest sequences (use plotcdf utility).
