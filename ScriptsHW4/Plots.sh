@@ -129,6 +129,8 @@ bioawk -c fastx \
 23542271	
 3667352
 
+#### Save file as csv and save into Documents to use in R:
+
 bioawk -c fastx \
   ' { print length($seq) "\t" } ' \ 
   dmelr6.gt.fa \
@@ -136,6 +138,18 @@ bioawk -c fastx \
 
 
 #### Histogram in R:
+> setwd("~/Documents/UCI/Bioinformatics_Fall2020")
+> gtLeng <- read.csv(file = 'dmelr6-gt-len-hist.csv')
+> head(gtLeng)
+    Length
+1 23513712
+2 25286936
+3 28110227
+4 32079331
+5  1348131
+6 23542271
+> hist(gtLeng$Length)
+> hist(log(gtLeng$Length))
  
 ###2. Sequence GC% distribution using a histogram.
 bioawk -c fastx \
@@ -152,6 +166,7 @@ bioawk -c fastx \
 0.423434
 0.36656 
 
+#### Save file as csv and save into Documents to use in R:
 bioawk -c fastx \
   ' { print gc($seq) } ' \ 
   dmelr6.gt.fa \
