@@ -36,6 +36,8 @@ LTELength_Hist.png
 
 2.	 Sequence GC% distribution. Use a histogram!
 
+LTEGC_Hist.png
+
 3.	Cumulative sequence size sorted from largest to smallest sequences. Don't forget about the plotCDF utility we used in class.
 
 dmelr6.lte.lengc.png
