@@ -63,12 +63,25 @@ bioawk -c fastx \
 0.52965
 0.345138
 
+#### Save file as csv and save into Documents to use in R: 
+
 bioawk -c fastx \
   ' { print gc($seq) } ' \ 
   dmelr6.lte.fa \
 > dmelr6.lte.gc.hist.csv
 
 #### Histogram in R:
+> setwd("~/Documents/UCI/Bioinformatics_Fall2020")
+> lteGC<- read.csv(file = 'dmelr6-lte-gc-hist.csv')
+> head(lteGC)
+       GC.
+1 0.316797
+2 0.225147
+3 0.387170
+4 0.375840
+5 0.609614
+6 0.423236
+> hist(lteGC$GC.)
 
 
 ###3. Cumulative sequence size (same as sequence length) sorted from largest to smallest sequences (use plotcdf utility which does the cumulative distribution).
