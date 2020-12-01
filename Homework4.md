@@ -45,7 +45,11 @@ dmelr6.lte.lengc.png
 #### > 100kb
 1.	Sequence length distribution. Use a histogram! A log scale will be helpful to show the full range of lengths.
 
+GT_Length_Histogram.png
+
 2.	 Sequence GC% distribution. Use a histogram!
+
+GT_GC_Histogram.png
 
 3.	Cumulative sequence size sorted from largest to smallest sequences. Don't forget about the plotCDF utility we used in class.
 
