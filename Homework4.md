@@ -59,16 +59,8 @@ dmelr6.gt.lengc.png
 
 ## Genome Assembly 
 
-### File Integrity  file using a checksum 
-Ran checksum prior to unzipping
-
-My checksum: 
-
-Online checksum for same file: 
-
-They match!
-
-*See `ChecksumPart2.sh` for script under ScriptsHW4 directory in homework4 branch*
+### Download and name file
+*See `DownloadPart2.sh` for script under ScriptsHW4 directory in homework4 branch*
 
 ### Assemble a Genome from MinION Reads
 
@@ -82,5 +74,8 @@ They match!
 2.	Compare your assembly to both the contig assembly and the scaffold assembly from the Drosophila melanogaster on FlyBase using a contiguity plot.
 Hint: use plotCDF or plotCDF2 as demonstrated in class and revisit this example, especially the FIFOs section, which demonstrates use of plotCDF2.
 3.	Calculate BUSCO scores (Links to an external site.) of both assemblies and compare them. You can obtain the BUSCOs pipeline from conda.
+*See `AssemblyAssessment.sh` for script under ScriptsHW4 directory in homework4 branch*
+## Extra Credit 
+nda.
 *See `AssemblyAssessment.sh` for script under ScriptsHW4 directory in homework4 branch*
 ## Extra Credit 
