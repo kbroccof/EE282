@@ -22,9 +22,10 @@ q
 
 
 #### Using miniasm to construct an assembly:
-miniasm $minimap_overlap.paf \
+miniasm -f iso1_onp_a2_1kb.fastq $minimap_overlap.paf \
 > $miniasm_assembly.gfa
 less $miniasm_assembly.gfa
 q
+
  
 
