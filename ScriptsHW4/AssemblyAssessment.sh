@@ -1,11 +1,12 @@
 #### Install busco: 
 conda install -c bioconda -c conda-forge busco=4.1.4 
 
-#### Calculate N50 of the assembly: 
+#### Calculate N50 of the assembly: MAYBE works?  
 miniasm $minimap_overlap.paf \
 > $miniasm_assembly.gfa
-
-MAYBE: worked but it's empty ..... 
+less $miniasm_assembly.gfa
+q
+ 
 n50 () {
   bioawk -c fastx ' { print length($seq); n=n+length($seq); } END { print n; } ' $1 \
   | sort -rn \
@@ -21,6 +22,10 @@ miniasm $minimap_overlap.paf \
 less $miniasm_assembly_N50processed.fa
 q
 
+
+
+
+
 miniasm $minimap_overlap.paf \
 > $miniasm_assembly.gfa \
 | awk ' $0 ~/^S/ { print ">" $2" \n" $3 } ' $miniasm_assembly.gfa \
@@ -30,7 +35,9 @@ miniasm $minimap_overlap.paf \
 less $miniasm_assembly_N50processed.fa
 q
 
-
+More JJ scripts from Nov 30th: but mine is not a fast a file? 
+bioawk -c fastx ' { print length($seq) } ' $miniasm_assembly.gfa \
+| less 
 
 JJ's script from Nov 30th: first one that is greater than 50% is the N50
 miniasm $minimap_overlap.paf \ 
