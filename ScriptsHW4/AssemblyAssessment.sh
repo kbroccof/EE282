@@ -19,6 +19,14 @@ q
 #output: 
 4494246
 
+#### Make a contiguity plot to compare to contain and scaffold assembly: 
+bioawk -c fastx \
+  ' { print length($seq) "\t" gc($seq) } ' miniasm_assembly.gfa \
+| sort -k1,1rn \
+> miniasm_assembly_length.txt
+
+plotCDF <(cut -f 1 miniasm_assembly_length.txt) miniasm_assembly_contigplot.png \
+display miniasm_assembly_contigplot.png
 
 
 
