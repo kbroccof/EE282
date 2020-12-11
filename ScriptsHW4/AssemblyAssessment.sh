@@ -4,7 +4,7 @@ conda install -c bioconda -c conda-forge busco=4.1.4
 #### Calculate N50 of the assembly:
 n50 () {
   bioawk -c fastx ' { print length($seq); n=n+length($seq); } END { print n; } ' $1 \
-  | sort -rn \
+  | sort -rn \ 
   | gawk ' NR == 1 { n = $1 }; NR > 1 { ni = $1 + ni; } ni/n > 0.5 { print $1; exit; } '
 } 
 
@@ -19,14 +19,19 @@ q
 #output: 
 4494246
 
-#### Make a contiguity plot to compare to contain and scaffold assembly: 
+#### Make a contiguity plot to compare to contig and scaffold assembly: 
 bioawk -c fastx \
-  ' { print length($seq) "\t" gc($seq) } ' miniasm_assembly.gfa \
+  ' { print length($seq) "\t" gc($seq) } ' miniasm_assembly_N50processed.fa \
 | sort -k1,1rn \
 > miniasm_assembly_length.txt
 
-plotCDF <(cut -f 1 miniasm_assembly_length.txt) miniasm_assembly_contigplot.png \
+plotCDF <(cut -f 1 miniasm_assembly_length.txt) miniasm_assembly_contigplot.png
+
 display miniasm_assembly_contigplot.png
+
+
+#### Calculate BUSCO scores from both assemblies and compare: 
+
 
 
 
