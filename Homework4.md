@@ -71,14 +71,21 @@ dmelr6.gt.lengc.png
 1.	Calculate the N50 (Links to an external site.) of your assembly (this can be done with faSize+awk+sort or with bioawk+awk+sort) and compare it to the Drosophila community reference's contig N50 (here (Links to an external site.))
 
 N50 of my assembly: 4,494,246
+
 N50 of Drosophila community reference's contig: 21,485,538
-Well, clearly mine is wrong, but I've been at this for days and I finally have an answer and done is better than perfect and this is all I have left to give please accept my apologies. 
 
 2.	Compare your assembly to both the contig assembly and the scaffold assembly from the Drosophila melanogaster on FlyBase using a contiguity plot.
 
 Hint: use plotCDF or plotCDF2 as demonstrated in class and revisit this example, especially the FIFOs section, which demonstrates use of plotCDF2.
 
 3.	Calculate BUSCO scores (Links to an external site.) of both assemblies and compare them. You can obtain the BUSCOs pipeline from conda.
+
+*See `AssemblyAssessment.sh` for script under ScriptsHW4 directory in homework4 branch*
+
+## Extra Credit 
+
+*See `EC.sh` for script under ScriptsHW4 directory in homework4 branch*
+nda.
 
 *See `AssemblyAssessment.sh` for script under ScriptsHW4 directory in homework4 branch*
 
