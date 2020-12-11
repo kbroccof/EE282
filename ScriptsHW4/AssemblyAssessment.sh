@@ -13,13 +13,11 @@ miniasm -f iso1_onp_a2_1kb.fastq minimap_overlap.paf \
 #less miniasm_assembly.gfa
 #q
 
-awk ' $0 ~/^S/ { print ">" $2" \n" $3 } ' miniasm_assembly.gfa \
-| tee >(n50 /dev/stdin > n50.txt) \
-| fold -w 60 \
-> miniasm_assembly_N50processed.fa
-less miniasm_assembly_N50processed.fa
+awk ' $0 ~/^S/ { print ">" $2" \n" $3 } ' miniasm_assembly.gfa | tee >(n50 /dev/stdin > n50.txt) | fold -w 60 > miniasm_assembly_N50processed.fa
+less n50.txt
 q
-
+#output: 
+4494246
 
 
 
