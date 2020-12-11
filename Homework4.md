@@ -78,17 +78,21 @@ N50 of Drosophila community reference's contig: 21,485,538
 
 Hint: use plotCDF or plotCDF2 as demonstrated in class and revisit this example, especially the FIFOs section, which demonstrates use of plotCDF2.
 
+miniasm_assembly_contigplot.png 
+
+This only displays my assembly because I have no brain anymore. Thank you and I apologize. I'm just grateful I got this far. 
+
 3.	Calculate BUSCO scores (Links to an external site.) of both assemblies and compare them. You can obtain the BUSCOs pipeline from conda.
 
-*See `AssemblyAssessment.sh` for script under ScriptsHW4 directory in homework4 branch*
 
-## Extra Credit 
-
-*See `EC.sh` for script under ScriptsHW4 directory in homework4 branch*
-nda.
 
 *See `AssemblyAssessment.sh` for script under ScriptsHW4 directory in homework4 branch*
 
-## Extra Credit 
 
-*See `EC.sh` for script under ScriptsHW4 directory in homework4 branch*
+ can obtain the BUSCOs pipeline from conda.
+
+
+
+*See `AssemblyAssessment.sh` for script under ScriptsHW4 directory in homework4 branch*
+
+
