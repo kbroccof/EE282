@@ -16,15 +16,15 @@ less $minimap_check.paf
 q
 
 minimap -t 32 -Sw5 -L100 -m0 iso1_onp_a2_1kb.fastq{,} \
-> $minimap_overlap.paf
-less $minimap_overlap.paf
+> minimap_overlap.paf
+less minimap_overlap.paf
 q 
 
 
 #### Using miniasm to construct an assembly:
-miniasm -f iso1_onp_a2_1kb.fastq $minimap_overlap.paf \
-> $miniasm_assembly.gfa
-less $miniasm_assembly.gfa
+miniasm -f iso1_onp_a2_1kb.fastq minimap_overlap.paf \
+> miniasm_assembly.gfa
+less miniasm_assembly.gfa
 q
 
  
